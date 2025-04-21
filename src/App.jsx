@@ -1,5 +1,9 @@
 import Header from "./sections/Header.jsx";
 import Banner from "./sections/Banner.jsx";
+import AboutUs from "./sections/AboutUs.jsx";
+import Features from "./sections/Features.jsx";
+import MyBooks from "./sections/Books.jsx";
+import Examples from "./sections/Examples.jsx";
 
 function App() {
 
@@ -7,6 +11,10 @@ function App() {
     <div>
         <Header />
         <Banner />
+        <AboutUs />
+        <MyBooks />
+        <Features />
+        <Examples />
     </div>
   )
 }
