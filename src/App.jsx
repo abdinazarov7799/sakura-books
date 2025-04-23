@@ -4,6 +4,7 @@ import AboutUs from "./sections/AboutUs.jsx";
 import Features from "./sections/Features.jsx";
 import MyBooks from "./sections/Books.jsx";
 import Examples from "./sections/Examples.jsx";
+import News from "./sections/News.jsx";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <MyBooks />
         <Features />
         <Examples />
+        <News />
     </div>
   )
 }
