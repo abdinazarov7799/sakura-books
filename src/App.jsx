@@ -5,6 +5,11 @@ import Features from "./sections/Features.jsx";
 import MyBooks from "./sections/Books.jsx";
 import Examples from "./sections/Examples.jsx";
 import News from "./sections/News.jsx";
+import Feedbacks from "./sections/Feedbacks.jsx";
+import Newsletter from "./sections/Newsletter.jsx";
+import Contact from "./sections/Contact.jsx";
+import MapSection from "./sections/MapSection.jsx";
+import Footer from "./sections/Footer.jsx";
 
 function App() {
 
@@ -17,6 +22,11 @@ function App() {
         <Features />
         <Examples />
         <News />
+        <Feedbacks />
+        <Newsletter />
+        <Contact />
+        <MapSection />
+        <Footer />
     </div>
   )
 }
