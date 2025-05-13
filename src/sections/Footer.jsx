@@ -57,7 +57,7 @@ const Footer = ({refs}) => {
                     </div>
                     <div className="flex items-center gap-[8px] text-[#9CA3AF] text-[16px]">
                         <FaEnvelope/>
-                        <span>info@sakurabooks.uz</span>
+                        <span>sakurabooksuzbekistan@gmail.com</span>
                     </div>
                 </div>
 

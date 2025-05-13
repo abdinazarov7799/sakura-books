@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Container from '../components/Container.jsx';
-import { FaTelegramPlane, FaInstagram, FaFacebookF, FaWhatsapp } from 'react-icons/fa';
+import { FaTelegramPlane, FaInstagram, FaFacebookF } from 'react-icons/fa';
 import LocationIcon from '../assets/location.svg'
 import PhoneIcon from '../assets/phone.svg'
 import EmailIcon from '../assets/email.svg'
+import {FaXTwitter} from "react-icons/fa6";
 
 const Contact = ({ref}) => {
     const [form, setForm] = useState({
@@ -90,7 +91,7 @@ const Contact = ({ref}) => {
                                 <div>
                                     <p className={'font-semibold text-[16px] leading-[24px] text-[#1F2937] mb-[4px]'}>Elektron manzil</p>
                                     <span className={'text-[#4B5563] text-[16px] leading-[24px]'}>
-                                    info@sakurabooks.uz<br />sales@sakurabooks.uz
+                                    sakurabooksuzbekistan@gmail.com
                                 </span>
                                 </div>
                             </div>
@@ -103,7 +104,7 @@ const Contact = ({ref}) => {
                                     <FaTelegramPlane /> Telegram
                                 </a>
                                 <a href="#" className="flex items-center justify-center border border-[#E5E7EB]  rounded-[16px] py-[25px] text-[#374151] hover:bg-[#F3F4F6] gap-[8px]">
-                                    <FaWhatsapp className="text-[#25D366]" /> WhatsApp
+                                    <FaXTwitter /> X (Twitter)
                                 </a>
                                 <a href="https://www.instagram.com/sakurabooks.uz/" target={'_blank'} className="flex items-center justify-center border border-[#E5E7EB]  rounded-[16px] py-[25px] text-[#374151] hover:bg-[#F3F4F6] gap-[8px]">
                                     <FaInstagram className="text-[#E1306C]" /> Instagram
