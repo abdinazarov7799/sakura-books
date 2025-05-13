@@ -31,13 +31,13 @@ const Banner = () => {
                             {t("Bolalar uchun sifatli va qiziqarli kitoblar. Bizning kitoblarimiz bolalarning rivojlanishiga yordam beradi va ularni bilim dunyosiga olib kiradi.")}
                         </p>
                         <div className={'flex items-center space-x-[16px]'}>
-                            <button className={'py-[15px] cursor-pointer px-[25px] border-[2px] border-[#FF9EC3] bg-white rounded-[8px] hover:bg-[#FF9EC3] group transition-colors duration-200'}>
-                                <span className={'text-[16px] font-semibold leading-[24px] text-[#FF9EC3] group-hover:text-white transition-colors duration-200'}>
+                            <button className={'py-[15px] cursor-pointer px-[25px] border-[2px] border-[#0F4B90] bg-white rounded-[8px] hover:bg-[#0F4B90] group transition-colors duration-200'}>
+                                <span className={'text-[16px] font-semibold leading-[24px] text-[#0F4B90] group-hover:text-white transition-colors duration-200'}>
                                     {t("Batafsil Ma'lumot")}
                                 </span>
                             </button>
-                            <button className={'py-[15px] cursor-pointer px-[25px] border-[2px] border-[#FF9EC3] bg-white rounded-[8px] hover:bg-[#FF9EC3] group transition-colors duration-200'}>
-                                <span className={'text-[16px] font-semibold leading-[24px] text-[#FF9EC3] group-hover:text-white transition-colors duration-200'}>
+                            <button className={'py-[15px] cursor-pointer px-[25px] border-[2px] border-[#0F4B90] bg-white rounded-[8px] hover:bg-[#0F4B90] group transition-colors duration-200'}>
+                                <span className={'text-[16px] font-semibold leading-[24px] text-[#0F4B90] group-hover:text-white transition-colors duration-200'}>
                                     {t("Kitoblarni Ko'rish")}
                                 </span>
                             </button>

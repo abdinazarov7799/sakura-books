@@ -1,37 +1,43 @@
 import React from 'react';
-import Logo from '../assets/logo.svg';
+import Logo from '../assets/logo.png';
 import Search from '../assets/search.svg';
 import ArrowDown from '../assets/arrow-down.svg';
 import Container from "../components/Container.jsx";
 import {useTranslation} from "react-i18next";
 
-const Header = () => {
+const Header = ({ref,refs}) => {
     const {t} = useTranslation();
+
+    const scrollToSection = (ref) => {
+        ref.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <section
+            ref={ref}
             style={{boxShadow: "0px 4px 6px -1px #0000001A"}}
             className={'py-[12px] sticky'}
         >
             <Container>
                 <div className={'flex items-center justify-between'}>
-                    <img src={Logo} alt="Logo" />
+                    <img src={Logo} alt="Logo" width={100} />
 
                     <div className={'space-x-[24px]'}>
-                        <a href="#" className={'text-[16px] font-semibold leading-[24px] transition hover:text-[#FF9EC3]'}>
+                        <button onClick={() => scrollToSection(refs.homeRef)} className={'text-[16px] font-semibold leading-[24px] transition hover:text-[#0F4B90]'}>
                             {t("Bosh Sahifa")}
-                        </a>
-                        <a href="#" className={'text-[16px] font-semibold leading-[24px] transition hover:text-[#FF9EC3]'}>
+                        </button>
+                        <button onClick={() => scrollToSection(refs.aboutRef)} className={'text-[16px] font-semibold leading-[24px] transition hover:text-[#0F4B90]'}>
                             {t("Biz Haqimizda")}
-                        </a>
-                        <a href="#" className={'text-[16px] font-semibold leading-[24px] transition hover:text-[#FF9EC3]'}>
+                        </button>
+                        <button onClick={() => scrollToSection(refs.booksRef)} className={'text-[16px] font-semibold leading-[24px] transition hover:text-[#0F4B90]'}>
                             {t("Kitoblar")}
-                        </a>
-                        <a href="#" className={'text-[16px] font-semibold leading-[24px] transition hover:text-[#FF9EC3]'}>
+                        </button>
+                        <button onClick={() => scrollToSection(refs.newsRef)} className={'text-[16px] font-semibold leading-[24px] transition hover:text-[#0F4B90]'}>
                             {t("Yangiliklar")}
-                        </a>
-                        <a href="#" className={'text-[16px] font-semibold leading-[24px] transition hover:text-[#FF9EC3]'}>
+                        </button>
+                        <button onClick={() => scrollToSection(refs.contactRef)} className={'text-[16px] font-semibold leading-[24px] transition hover:text-[#0F4B90]'}>
                             {t("Aloqa")}
-                        </a>
+                        </button>
                     </div>
 
                     <div className={'space-x-[16px] flex items-center'}>

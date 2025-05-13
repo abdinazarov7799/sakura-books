@@ -7,7 +7,7 @@ import CardBook3 from "../assets/card-book3.png";
 import CardBook4 from "../assets/card-book4.png";
 import BasketIcon from "../assets/basket-icon.svg";
 
-const MyBooks = () => {
+const MyBooks = ({ref}) => {
     const {t} = useTranslation();
 
     const filters = [
@@ -59,10 +59,10 @@ const MyBooks = () => {
     ]
 
     return (
-        <section className={'bg-[#fff] py-[64px]'}>
+        <section ref={ref} className={'bg-[#fff] py-[64px]'}>
             <Container>
                 <h2 className={'text-[#1F2937] font-bold text-[30px] leading-[36px] text-center'}>{t("Bizning Kitoblarimiz")}</h2>
-                <div className={'mx-auto w-[80px] h-[4px] bg-[#FF9EC3] mt-[16px] mb-[24px]'}></div>
+                <div className={'mx-auto w-[80px] h-[4px] bg-[#0F4B90] mt-[16px] mb-[24px]'}></div>
                 <p className={'text-[16px] leading-[24px] text-[#374151] text-center max-w-[672px] mx-auto mb-[48px]'}>
                     {t("Bolalar uchun eng yaxshi kitoblarni taqdim etamiz. Har bir kitob bolalarning yoshi va\n" +
                         "qiziqishlariga mos ravishda yaratilgan.")}
@@ -70,9 +70,9 @@ const MyBooks = () => {
                 <div className={'flex items-center justify-center space-x-[16px]'}>
                     {filters?.map((filter) => (
                         <button
-                            className={'py-[11px] cursor-pointer px-[25px] border-[2px] border-[#FF9EC3] bg-white rounded-[8px] hover:bg-[#FF9EC3] group transition-colors duration-200'}
+                            className={'py-[11px] cursor-pointer px-[25px] border-[2px] border-[#0F4B90] bg-white rounded-[8px] hover:bg-[#0F4B90] group transition-colors duration-200'}
                         >
-                            <span className={'text-[16px] font-semibold leading-[24px] text-[#FF9EC3] group-hover:text-white transition-colors duration-200'}>
+                            <span className={'text-[16px] font-semibold leading-[24px] text-[#0F4B90] group-hover:text-white transition-colors duration-200'}>
                                     {t(filter)}
                             </span>
                         </button>
@@ -82,7 +82,7 @@ const MyBooks = () => {
                     {books?.map((book) => (
                         <div className={'w-[352px] rounded-[16px]'} style={{boxShadow: '0px 0px 15px 0px #0000001A'}} key={book.id}>
                             <div className={'w-full h-[256px] rounded-t-[16px] relative'} style={{backgroundImage: `url(${book.image})`}}>
-                                <div className={'absolute top-[12px] right-[12px] bg-[#FF9EC3] rounded-full px-[12px] py-[4px]'}>
+                                <div className={'absolute top-[12px] right-[12px] bg-[#0F4B90] rounded-full px-[12px] py-[4px]'}>
                                     <span className={'text-white font-bold text-[12px] leading-[16px]'}>{book.category}</span>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@ const MyBooks = () => {
                                 <h3 className={'font-bold text-[20px] text-[#1F2937] leading-[28px] '}>{book.title}</h3>
                                 <p className={'mt-[9px] mb-[23px] text-[16px] leading-[24px] text-[#4B5563]'}>{book.description}</p>
                                 <div className={'flex items-center justify-between'}>
-                                    <span className={'text-[#FF9EC3] font-bold text-[18px] leading-[28px]'}>{book.price} {t("so'm")}</span>
+                                    <span className={'text-[#0F4B90] font-bold text-[18px] leading-[28px]'}>{book.price} {t("so'm")}</span>
                                     <img src={BasketIcon} alt="BasketIcon" width={40} height={40} />
                                 </div>
                             </div>
@@ -98,8 +98,8 @@ const MyBooks = () => {
                     ))}
                 </div>
                 <div className={'flex justify-center'}>
-                    <button className={' py-[15px] cursor-pointer px-[25px] border-[2px] border-[#FF9EC3] bg-white rounded-[8px] hover:bg-[#FF9EC3] group transition-colors duration-200'}>
-                                <span className={'text-[16px] font-semibold leading-[24px] text-[#FF9EC3] group-hover:text-white transition-colors duration-200'}>
+                    <button className={' py-[15px] cursor-pointer px-[25px] border-[2px] border-[#0F4B90] bg-white rounded-[8px] hover:bg-[#0F4B90] group transition-colors duration-200'}>
+                                <span className={'text-[16px] font-semibold leading-[24px] text-[#0F4B90] group-hover:text-white transition-colors duration-200'}>
                                     {t("Barcha Kitoblarni Ko'rish")}
                                 </span>
                     </button>

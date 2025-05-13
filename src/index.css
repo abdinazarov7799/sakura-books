@@ -10,5 +10,11 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 .color-primary {
-  color: rgba(255, 158, 195, 1);
+  color: #0F4B90;
+}
+html {
+  scroll-behavior: smooth;
+}
+button {
+  cursor: pointer;
 }

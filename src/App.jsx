@@ -10,25 +10,32 @@ import Newsletter from "./sections/Newsletter.jsx";
 import Contact from "./sections/Contact.jsx";
 import MapSection from "./sections/MapSection.jsx";
 import Footer from "./sections/Footer.jsx";
+import {useRef} from "react";
 
 function App() {
+    const homeRef = useRef(null);
+    const aboutRef = useRef(null);
+    const booksRef = useRef(null);
+    const newsRef = useRef(null);
+    const contactRef = useRef(null);
+    const refs = {homeRef,aboutRef, booksRef, newsRef, contactRef}
 
-  return (
-    <div>
-        <Header />
-        <Banner />
-        <AboutUs />
-        <MyBooks />
-        <Features />
-        <Examples />
-        <News />
-        <Feedbacks />
-        <Newsletter />
-        <Contact />
-        <MapSection />
-        <Footer />
-    </div>
-  )
+    return (
+        <div>
+            <Header ref={homeRef} refs={refs} />
+            <Banner/>
+            <AboutUs ref={aboutRef}/>
+            <MyBooks ref={booksRef}/>
+            <Features/>
+            <Examples/>
+            <News ref={newsRef}/>
+            <Feedbacks/>
+            <Newsletter/>
+            <Contact ref={contactRef}/>
+            <MapSection/>
+            <Footer refs={refs}/>
+        </div>
+    )
 }
 
 export default App

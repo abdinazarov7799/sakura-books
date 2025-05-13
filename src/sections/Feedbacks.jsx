@@ -10,7 +10,7 @@ const Feedbacks = () => {
                 <h2 className="text-[#1F2937] font-bold text-[30px] leading-[36px] text-center">
                     Mijozlarimiz Fikrlari
                 </h2>
-                <div className="mx-auto w-[80px] h-[4px] bg-[#FF9EC3] mt-[16px] mb-[24px]"></div>
+                <div className="mx-auto w-[80px] h-[4px] bg-[#0F4B90] mt-[16px] mb-[24px]"></div>
                 <p className="text-[16px] leading-[24px] text-[#374151] text-center max-w-[672px] mx-auto mb-[48px]">
                     Ota-onalar va o'qituvchilar bizning kitoblarimiz haqida nima deyishadi.
                 </p>
@@ -35,7 +35,7 @@ const Feedbacks = () => {
                 </div>
 
                 <div className="flex justify-center mt-[32px] space-x-[8px]">
-                    <div className="w-[10px] h-[10px] bg-[#FF9EC3] rounded-full"></div>
+                    <div className="w-[10px] h-[10px] bg-[#0F4B90] rounded-full"></div>
                     <div className="w-[10px] h-[10px] bg-[#D1D5DB] rounded-full"></div>
                 </div>
             </Container>

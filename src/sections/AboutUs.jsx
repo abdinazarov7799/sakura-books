@@ -5,13 +5,13 @@ import Image from "../assets/aboutImage.jpg";
 import Icon1 from "../assets/book-icon.svg";
 import Icon2 from "../assets/quality-icon.svg";
 
-const AboutUs = () => {
+const AboutUs = ({ref}) => {
     const {t} = useTranslation();
     return (
-        <section className={'bg-[#F9FAFB] py-[64px]'}>
+        <section ref={ref} className={'bg-[#F9FAFB] py-[64px]'}>
             <Container>
                 <h2 className={'text-[#1F2937] font-bold text-[30px] leading-[36px] text-center'}>{t("Biz Haqimizda")}</h2>
-                <div className={'mx-auto w-[80px] h-[4px] bg-[#FF9EC3] mt-[16px] mb-[48px]'}></div>
+                <div className={'mx-auto w-[80px] h-[4px] bg-[#0F4B90] mt-[16px] mb-[48px]'}></div>
                 <div className={'flex items-center space-x-[40px]'}>
                     <div
                         style={{backgroundImage: `url(${Image})`,boxShadow: '0px 8px 10px -6px #0000001A'}}

@@ -34,7 +34,7 @@ const Newsletter = () => {
                     />
                     <button
                         type="submit"
-                        className="bg-[#FF9EC3] hover:bg-[#ff86b4] transition-colors duration-200 text-white text-[16px] font-semibold py-[12px] px-[24px] rounded-[8px]"
+                        className="bg-[#0F4B90] hover:bg-[#ff86b4] transition-colors duration-200 text-white text-[16px] font-semibold py-[12px] px-[24px] rounded-[8px]"
                         disabled={!agreed}
                     >
                         Obuna Bo'lish
@@ -45,7 +45,7 @@ const Newsletter = () => {
                     <label className="flex items-center gap-[8px] text-[#6B7280] text-[14px]">
                         <input
                             type="checkbox"
-                            className="w-[16px] h-[16px] text-[#FF9EC3] focus:ring-[#FF9EC3] border-[#FF9EC3]"
+                            className="w-[16px] h-[16px] text-[#0F4B90] focus:ring-[#0F4B90] border-[#0F4B90]"
                             checked={agreed}
                             onChange={() => setAgreed(!agreed)}
                         />

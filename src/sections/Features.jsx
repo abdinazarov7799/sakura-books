@@ -11,7 +11,7 @@ const Features = () => {
         <section className={'bg-[#F9FAFB] py-[64px]'}>
             <Container>
                 <h2 className={'text-[#1F2937] font-bold text-[30px] leading-[36px] text-center'}>{t("Nima Uchun Bizni Tanlashadi")}</h2>
-                <div className={'mx-auto w-[80px] h-[4px] bg-[#FF9EC3] mt-[16px] mb-[24px]'}></div>
+                <div className={'mx-auto w-[80px] h-[4px] bg-[#0F4B90] mt-[16px] mb-[24px]'}></div>
                 <p className={'text-[16px] leading-[24px] text-[#374151] text-center max-w-[672px] mx-auto mb-[48px]'}>
                     {t("SakuraBooks nashriyoti bolalar uchun eng yaxshi kitoblarni taqdim etadi. Bizning kitoblarimiz\n" +
                         "bolalarning rivojlanishiga yordam beradi.")}

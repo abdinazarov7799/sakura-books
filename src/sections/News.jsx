@@ -7,7 +7,7 @@ import News3 from "../assets/news3.png";
 import ArrowRight from "../assets/arrow-right.svg";
 import Calendar from "../assets/calendar.svg";
 
-const News = () => {
+const News = ({ref}) => {
     const {t} = useTranslation();
 
     const news = [
@@ -38,10 +38,10 @@ const News = () => {
     ]
 
     return (
-        <section className={'bg-[#F9FAFB] py-[64px]'}>
+        <section ref={ref} className={'bg-[#F9FAFB] py-[64px]'}>
             <Container>
                 <h2 className={'text-[#1F2937] font-bold text-[30px] leading-[36px] text-center'}>{t("Yangiliklar")}</h2>
-                <div className={'mx-auto w-[80px] h-[4px] bg-[#FF9EC3] mt-[16px] mb-[24px]'}></div>
+                <div className={'mx-auto w-[80px] h-[4px] bg-[#0F4B90] mt-[16px] mb-[24px]'}></div>
                 <p className={'text-[16px] leading-[24px] text-[#374151] text-center max-w-[672px] mx-auto mb-[48px]'}>
                     {t("Eng so'nggi yangiliklar va tadbirlar haqida bilib oling.")}
                 </p>
@@ -58,7 +58,7 @@ const News = () => {
                                 <h3 className={'font-bold text-[20px] text-[#1F2937] leading-[28px] '}>{item.title}</h3>
                                 <p className={'mt-[9px] mb-[23px] text-[16px] leading-[24px] text-[#4B5563]'}>{item.description}</p>
                                 <a href='#' className={'flex items-center space-x-[6px]'}>
-                                    <span className={'text-[#FF9EC3] font-bold text-[18px] leading-[28px]'}>{t("Batafsil")}</span>
+                                    <span className={'text-[#0F4B90] font-bold text-[18px] leading-[28px]'}>{t("Batafsil")}</span>
                                     <img src={ArrowRight} alt="ArrowRight" width={10.6} height={10.6} />
                                 </a>
                             </div>
@@ -66,8 +66,8 @@ const News = () => {
                     ))}
                 </div>
                 <div className={'flex justify-center'}>
-                    <button className={'py-[15px] cursor-pointer px-[25px] border-[2px] border-[#FF9EC3] bg-white rounded-[8px] hover:bg-[#FF9EC3] group transition-colors duration-200'}>
-                                <span className={'text-[16px] font-semibold leading-[24px] text-[#FF9EC3] group-hover:text-white transition-colors duration-200'}>
+                    <button className={'py-[15px] cursor-pointer px-[25px] border-[2px] border-[#0F4B90] bg-white rounded-[8px] hover:bg-[#0F4B90] group transition-colors duration-200'}>
+                                <span className={'text-[16px] font-semibold leading-[24px] text-[#0F4B90] group-hover:text-white transition-colors duration-200'}>
                                     {t("Barcha Yangiliklar")}
                                 </span>
                     </button>
