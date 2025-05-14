@@ -8,7 +8,7 @@ import {
     FaPhoneAlt,
     FaEnvelope
 } from 'react-icons/fa';
-import Logo from '../assets/logo.png';
+import LogoLight from '../assets/logo-light.svg';
 
 const Footer = ({refs}) => {
     const scrollToSection = (ref) => {
@@ -17,9 +17,8 @@ const Footer = ({refs}) => {
     return (
         <footer className="bg-[#1F2937] text-white pt-[64px] pb-[32px]">
             <div className="max-w-[1280px] mx-auto px-[24px] grid grid-cols-1 md:grid-cols-4 gap-[32px] mb-[32px]">
-                {/* 1. Brend va ta'rif */}
                 <div>
-                    <img src={Logo} alt="Logo" width={170} height={36}/>
+                    <img src={LogoLight} alt="Logo" width={170} />
                     <p className="text-[16px] text-[#9CA3AF] mb-[16px] mt-[25px] leading-[24px]">
                         SakuraBooks – bolalar uchun sifatli va qiziqarli kitoblar nashriyoti. Bizning maqsadimiz bolalar
                         qalbida bilim va ma'rifat urug'larini ekishdir.
@@ -32,7 +31,6 @@ const Footer = ({refs}) => {
                     </div>
                 </div>
 
-                {/* 2. Tezkor havolalar */}
                 <div>
                     <h3 className="text-[20px] font-bold mb-[24px]">Tezkor Havolalar</h3>
                     <ul className="space-y-[8px] text-[16px] text-[#9CA3AF]">
@@ -44,7 +42,6 @@ const Footer = ({refs}) => {
                     </ul>
                 </div>
 
-                {/* 3. Bog'lanish */}
                 <div>
                     <h3 className="text-[20px] font-bold mb-[24px]">Bog'lanish</h3>
                     <div className="flex items-start gap-[8px] text-[#9CA3AF] text-[16px] mb-[12px]">
@@ -61,7 +58,6 @@ const Footer = ({refs}) => {
                     </div>
                 </div>
 
-                {/* 4. Ish vaqti */}
                 <div>
                     <h3 className="text-[20px] font-bold mb-[24px]">Ish Vaqti</h3>
                     <ul className="text-[16px] text-[#9CA3AF] space-y-[8px]">
@@ -72,7 +68,6 @@ const Footer = ({refs}) => {
                 </div>
             </div>
 
-            {/* Pastki yozuv */}
             <div className="border-t border-[#374151] text-center text-[16px] text-[#9CA3AF] pt-[16px] leading-[24px]">
                 © 2025 SakuraBooks. Barcha huquqlar himoyalangan.
             </div>

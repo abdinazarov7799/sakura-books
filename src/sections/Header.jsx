@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../assets/logo.png';
+import LogoDark from '../assets/logo-dark.svg';
 import Search from '../assets/search.svg';
 import ArrowDown from '../assets/arrow-down.svg';
 import Container from "../components/Container.jsx";
@@ -20,7 +20,7 @@ const Header = ({ref,refs}) => {
         >
             <Container>
                 <div className={'flex items-center justify-between'}>
-                    <img src={Logo} alt="Logo" width={100} />
+                    <img src={LogoDark} alt="Logo" width={130} />
 
                     <div className={'space-x-[24px]'}>
                         <button onClick={() => scrollToSection(refs.homeRef)} className={'text-[16px] font-semibold leading-[24px] transition hover:text-[#0F4B90]'}>
