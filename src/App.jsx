@@ -10,7 +10,7 @@ import Newsletter from "./sections/Newsletter.jsx";
 import Contact from "./sections/Contact.jsx";
 import MapSection from "./sections/MapSection.jsx";
 import Footer from "./sections/Footer.jsx";
-import {useRef} from "react";
+import {useRef, useState} from "react";
 
 function App() {
     const homeRef = useRef(null);
@@ -19,13 +19,18 @@ function App() {
     const newsRef = useRef(null);
     const contactRef = useRef(null);
     const refs = {homeRef,aboutRef, booksRef, newsRef, contactRef}
+    const [searchQuery, setSearchQuery] = useState('');
+
+    const handleSearch = (query) => {
+        setSearchQuery(query);
+    };
 
     return (
         <div>
-            <Header ref={homeRef} refs={refs} />
+            <Header ref={homeRef} refs={refs} onSearch={handleSearch} />
             <Banner/>
             <AboutUs ref={aboutRef}/>
-            <MyBooks ref={booksRef}/>
+            <MyBooks ref={booksRef} searchQuery={searchQuery}/>
             <Features/>
             <Examples/>
             <News ref={newsRef}/>
