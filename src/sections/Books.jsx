@@ -1,10 +1,10 @@
 import React from 'react';
 import Container from "../components/Container.jsx";
 import {useTranslation} from "react-i18next";
-import CardBook1 from "../assets/card-book1.png";
-import CardBook2 from "../assets/card-book2.png";
-import CardBook3 from "../assets/card-book3.png";
-import CardBook4 from "../assets/card-book4.png";
+import CardBook1 from "../assets/1a.png";
+import CardBook2 from "../assets/2a.png";
+import CardBook3 from "../assets/3a.png";
+import CardBook4 from "../assets/4a.png";
 import BasketIcon from "../assets/basket-icon.svg";
 
 const MyBooks = ({ref}) => {
@@ -81,7 +81,12 @@ const MyBooks = ({ref}) => {
                 <div className={'flex justify-center space-x-[32px] mt-[40px] mb-[48px]'}>
                     {books?.map((book) => (
                         <div className={'w-[352px] rounded-[16px]'} style={{boxShadow: '0px 0px 15px 0px #0000001A'}} key={book.id}>
-                            <div className={'w-full h-[256px] rounded-t-[16px] relative'} style={{backgroundImage: `url(${book.image})`}}>
+                            <div className={'w-full h-[320px] rounded-t-[16px] relative overflow-hidden bg-gray-50'}>
+                                <img
+                                    src={book.image}
+                                    alt={book.title}
+                                    className="w-full h-full object-contain"
+                                />
                                 <div className={'absolute top-[12px] right-[12px] bg-[#0F4B90] rounded-full px-[12px] py-[4px]'}>
                                     <span className={'text-white font-bold text-[12px] leading-[16px]'}>{book.category}</span>
                                 </div>
@@ -89,10 +94,10 @@ const MyBooks = ({ref}) => {
                             <div className={'p-[24px]'}>
                                 <h3 className={'font-bold text-[20px] text-[#1F2937] leading-[28px] '}>{book.title}</h3>
                                 <p className={'mt-[9px] mb-[23px] text-[16px] leading-[24px] text-[#4B5563]'}>{book.description}</p>
-                                <div className={'flex items-center justify-between'}>
-                                    <span className={'text-[#0F4B90] font-bold text-[18px] leading-[28px]'}>{book.price} {t("so'm")}</span>
-                                    <img src={BasketIcon} alt="BasketIcon" width={40} height={40} />
-                                </div>
+                                {/*<div className={'flex items-center justify-between'}>*/}
+                                {/*    <span className={'text-[#0F4B90] font-bold text-[18px] leading-[28px]'}>{book.price} {t("so'm")}</span>*/}
+                                {/*    <img src={BasketIcon} alt="BasketIcon" width={40} height={40} />*/}
+                                {/*</div>*/}
                             </div>
                         </div>
                     ))}

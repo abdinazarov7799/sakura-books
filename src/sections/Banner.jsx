@@ -1,8 +1,9 @@
 import React from 'react';
 import BannerBg from '../assets/banner.png';
-import BannerImg1 from '../assets/bannerImg1.png';
-import BannerImg2 from '../assets/bannerImg2.png';
-import BannerImg3 from '../assets/bannerImg3.png';
+import BannerImg1 from '../assets/1a.png';
+import BannerImg2 from '../assets/2a.png';
+import BannerImg3 from '../assets/3a.png';
+import BannerImg4 from '../assets/4a.png';
 import Container from "../components/Container.jsx";
 import {useTranslation} from "react-i18next";
 
@@ -46,18 +47,23 @@ const Banner = () => {
                     <div className={'relative w-full h-[478px]'}>
                         <img
                             src={BannerImg1}
-                            alt="BannerImg1"
-                            className={'absolute bottom-[139px] right-[374px]'}
+                            alt="Kapalak"
+                            className={'absolute top-[10px] right-[300px] w-[250px] h-[250px] object-contain'}
                         />
                         <img
                             src={BannerImg2}
-                            alt="BannerImg2"
-                            className={'absolute bottom-[79px] right-[186px]'}
+                            alt="Begemot"
+                            className={'absolute top-[160px] right-[180px] w-[250px] h-[250px] object-contain'}
                         />
                         <img
                             src={BannerImg3}
-                            alt="BannerImg3"
-                            className={'absolute bottom-0 right-0'}
+                            alt="Tiyin"
+                            className={'absolute top-[10px] right-[50px] w-[250px] h-[250px] object-contain'}
+                        />
+                        <img
+                            src={BannerImg4}
+                            alt="It"
+                            className={'absolute top-[200px] right-[0px] w-[250px] h-[250px] object-contain'}
                         />
                     </div>
 
